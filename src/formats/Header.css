@@ -2,15 +2,17 @@
   display: flex;
   justify-content: space-between;
   padding: 0rem 1rem;
-  background-color: var(--bg);
+  background-color: color-mix(in srgb, var(--bg) 0%, transparent);
   color: var(--text);
   position: sticky;
   top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .nav {
   background-color: var(--bg);
-  justify-content: space-between;
   max-width: 0;
   opacity: 0;
   overflow: hidden;
@@ -18,10 +20,11 @@
   transition:
     max-width 0.35s ease,
     opacity 0.2s ease;
+  border-radius: 0 0 1rem 1rem;
 }
 
 .nav--open {
-  max-width: 40rem; /* large enough to fit your links */
+  max-width: 40rem;
   opacity: 1;
 }
 
