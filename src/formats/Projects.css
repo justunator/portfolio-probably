@@ -1,0 +1,27 @@
+.projects__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  text-align: left;
+  gap: 1rem;
+  column-count: 2;
+}
+
+.projects__item {
+  background-color: var(--accent-bg);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: calc(50% - 1rem);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  flex: 0 0 calc((100% - 2rem) / 5);
+}
+
+.projects__item-media {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
